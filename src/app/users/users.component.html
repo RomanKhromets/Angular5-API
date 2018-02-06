@@ -1,18 +1,21 @@
 <div class="container">
 
 	<div class="card text-center">
+
 	  <div class="card-header"></div>
 
 	  <div class="card-body">
-	    <h5 class="card-title">Special title treatment {{ user.userId }}</h5>
+	  	<h5 class="card-title">Special title treatment {{ user.userId }}</h5>
 	    <p class="card-text">{{ user.title }}.</p>
 	    <button [routerLink]="['/second/'+this.user.id]"  type="button" class="btn btn-info btn-lg"
 	     > Go to next album 
 	     </button>
 	  </div>
+
 	  <div class="card-footer text-muted">
 	   ID - {{ user.id }}
 	  </div>
+
 	</div>
 
 </div>

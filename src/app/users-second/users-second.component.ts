@@ -14,16 +14,13 @@ export class UsersSecondComponent implements OnInit {
 
 	@Input() user;
 
-  constructor( private route: Router,
-				private activateRoute: ActivatedRoute,
-  				private usersService: UsersService) { }
+  constructor() { }
 
   onClick(){
   	// console.log(this.user.id);
   }
 
   ngOnInit() {
-  	
   } 
 
 }

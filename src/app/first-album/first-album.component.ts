@@ -21,9 +21,6 @@ export class FirstAlbumComponent implements OnInit {
 			this.users = users
 		});
 	}
-
-	 // p: number = 1;
-
 }
 
 

@@ -17,7 +17,7 @@ export class UsersService {
 			.map(function(response) {
 				return response.json();
 			})
-			// .map(response => response.json)
+			// .map(response => response.json())
 	}
 
 	getUserId(id) {
@@ -29,12 +29,9 @@ export class UsersService {
 	}
 
 	getDetails(id){
-				// console.log(id);
+		// console.log(id);
 		return this.http.get( this.detailUrl+id )
 			.map(response => response.json());
-};
-			
-
-		 // return this.http.get<Config>(this.configUrl);
+	};
 
 }

@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, ActivatedRoute, ParamMap } from '@angular/router';
-
-import {Subscription} from 'rxjs/Subscription';
+import { ActivatedRoute, ParamMap } from '@angular/router';
 
 import { UsersService } from '.././users.service';
 
@@ -14,15 +12,9 @@ export class ThirdAlbumComponent implements OnInit {
 
 	  users = [];
     private id: number;
-    // private subscription: Subscription;
 
   constructor(private usersService: UsersService,
-          private route: ActivatedRoute,
-          private router: Router) { 
-
-      // this.subscription = route.params
-      //     .subscribe(params=>this.id=params['id']);
-  }
+          private route: ActivatedRoute) {}
 
     ngOnInit() {
 
