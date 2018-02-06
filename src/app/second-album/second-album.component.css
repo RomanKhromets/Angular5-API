@@ -1,0 +1,13 @@
+ .my-pagination /deep/ .ngx-pagination .current {
+ 	margin-top: 8px;
+ 	position: relative; 	
+ 	width: auto;
+    line-height: 1.25;
+    color: #17a2b8;
+    background-color: #fff;
+  }
+
+.back {
+	position: relative; 
+	z-index: 1030;
+}

@@ -1,0 +1,28 @@
+
+<div class="container">
+	
+	<div class="card text-center">
+	  <div class="card-header">Album-ID - {{ user.albumId }}
+	  
+	  </div>
+
+	  <div class="card-body">
+
+			<img class="img-thumbnail" src="{{ user.thumbnailUrl }}" alt="Card image cap">
+
+			<div class="text-body">
+				<h5 class="card-title"> Album-ID - {{ user.albumId }}</h5>
+		    <p class="card-text">Title: {{ user.title }}.</p>
+		    <button [routerLink]="['third/'+this.user.id]"  type="button" class="btn btn-info btn-lg"
+		     > Details</button>
+			 </div> 
+
+	  </div>
+
+	  <div class="card-footer text-muted">
+	   ID - {{ user.id }}
+	  </div>
+
+	</div>
+
+</div>

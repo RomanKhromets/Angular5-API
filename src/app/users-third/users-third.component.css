@@ -1,0 +1,7 @@
+.card {
+	margin: auto;
+	margin-top: 1rem;
+	width: auto;
+	max-width: 20rem;
+	min-width: 250px
+}

@@ -1,0 +1,12 @@
+<button routerLink = "../../" type="button" class="btn btn-secondary btn-lg btn-block back"> Back</button>
+
+<app-users-second 
+	*ngFor = "let u of users | paginate: { itemsPerPage: 10, currentPage: p }"
+	[user] = "u"
+></app-users-second>
+
+<div class="d-flex justify-content-center">
+	<pagination-controls class="my-pagination" maxSize="5" previousLabel=" " nextLabel=" " 
+	 directionLinks="true" (pageChange)="p = $event"></pagination-controls>
+</div>
+

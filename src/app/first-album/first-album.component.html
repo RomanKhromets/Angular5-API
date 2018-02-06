@@ -1,0 +1,16 @@
+<!-- <div class="row"> -->
+	<app-users 
+		*ngFor = "let u of users | paginate: { itemsPerPage: 10, currentPage: p}"
+		[user] = "u"
+	> </app-users>
+<!-- </div> -->
+
+ <!-- <pagination-controls class="my-pagination" (pageChange)="p = $event"></pagination-controls> -->
+
+<div class="d-flex justify-content-center">
+	<pagination-controls class="my-pagination" maxSize="5" previousLabel=" " nextLabel=" " 
+	 directionLinks="true" (pageChange)="p = $event"></pagination-controls>
+</div>
+
+
+ 
